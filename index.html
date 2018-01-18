@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Adanna</title>
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Permanent+Marker" rel="stylesheet">
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<!-- three.js -->
+		<script type="text/javascript" src="src/three.min.js"></script>
+		<script type="text/javascript" src="src/OBJLoader.js"></script>
+		<script type="text/javascript" src="src/MTLLoader.js"></script>
+	</head>
+	<body>
+		<div class="world" id="world">
+			<div id="container">
+			<!--- .........................LOAD PAGE HTML............................................. -->
+				<div id="load_screen">
+					<div id="load-top"></div>
+					<div id="loader"></div>
+					<div id="load-bottom"></div>
+				</div>
+				<div id="menu">
+						<div id="nav-icon">
+							<div></div>
+						</div>
+				</div>
+				<div id="wrapper">
+					<div id="home" class="page home-container">
+						<div>
+								<h2>My skills are  <span id="title-changer"></span></h2>
+						</div>
+						<h1>Adanna O.<br> 
+							<span id="resume-icon">
+									<a href="./resume.html" target="_blank">
+										<i class="fa fa-address-book-o" aria-hidden="true"></i>
+									</a>
+							<span id="resume">resume</span>
+						</h1>
+						<div></div>
+					</div>
+					<div id="about" class="page about-container">
+						<h1 class="title" id="about-title">About Me</h1>
+						<div class="container">
+							<p>I hail from Nashville Tennessee by way of Nigeria. My passion for IT came to a head when I moved to New York City and discovered a thriving tech industry. As I explore the tech industry I have found that my interests lie in front-end development and UX/UI design. I am drawn to these fields due to the creativity they allow. The ability to create is essental for me to thrive in any environment</p>
+						</div>
+					</div>
+					<div id="projects" class="page project-container">
+						<h1 class="title" id="project-title">Projects</h1>
+						<div class="container" id="project-wrapper">
+							<div id="prev" class="arrows" onclick="plusSlides(-1)"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>
+							<div class="individual-project" id="proj1">
+								<div class="project-image">
+										<h2 class="project-title">MATRIX CALC</h2>		
+								</div>	
+								<div class="numbertext">- calculator made with js,html,css</div>
+							</div>
+							<div class="individual-project" id="proj2">
+								<div class="project-image">
+										<h2 class="project-title">FROGGER</h2>
+								</div>
+							</div>
+							<div class="individual-project" id="proj3">
+								<div class="project-image">
+										<h2 class="project-title">ALARM</h2>
+								</div>
+							</div>
+							<div id="next" class="arrows" onclick="plusSlides(1)"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					<div id="contact" class="page contact-container">
+						<h1 class="title" id="contact-title">Contact Me</h1>
+						<div class="container" id="contact-wrapper">
+							<h3>If you would like to learn more about me or reach out for future collaboration, please see my contact info below or send a message:</h3><br><br>
+							<h2>Adanna Omatu</h2><br>
+							<p>Web Developer</p><br>
+							<p>347-903-2205</p><br><br>
+							<p class="contact-links"><a href="mailto:hello@adanna-o.com">hello@adanna-o.com</a></p><br>
+							<p class="contact-links"><a href="./pages/resume.html" target="_blank">resume</a></p>
+						</div>
+					</div>
+				</div>
+				<div id="page-marker">
+					<div class="dot active" id="dot1" title="home">
+						<a href="#home" style="display: block"></a>
+					</div>
+					<div class="dot" id="dot2" title="about">
+						<a href="#about" style="display: block"></a>
+					</div>
+					<div class="dot" id="dot3" title="projects">
+						<a href="#projects" style="display: block"></a>
+					</div>
+					<div class="dot" id="dot4" title="contact">
+						<a href="#contact"  style="display: block"></a>
+					</div>
+				</div>
+			</div>
+			<a id="main-logo" class="logo" href="#home">Adanna O.</a>
+			<div id="scroll-btn">
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+			</div>
+		</div>
+		<!-- MENU -->
+		<div id="menu-wrapper">
+			<div class="links-wrapper">
+				<ul class="menu-ul">
+					<li class="list-item"><a href="#home">Home</a></li>
+					<li class="list-item"><a href="#about">About</a></li>
+					<li class="list-item"><a href="#projects">Projects</a></li>
+					<li class="list-item"><a href="#contact">Contact</a></li>
+				</ul>
+				<div class="icons">
+					<span>|</span>
+					<a href="./resume.html" target="_blank">
+						<i class="fa fa-address-book-o" aria-hidden="true"></i>
+					</a>
+					<a href="mailto:hello@adanna-o.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/adanna-o/" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+					<a href="http://github.com/adanna21" target="_blank">
+						<i class="fa fa-github" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="src/main.js"/></script>
+	</body>
+</html>
