@@ -489,6 +489,10 @@ ul {
 	color: #bbb;
 }
 
+.numbertext p {
+	padding-right: 10%;
+}
+
 .individual-project:hover .numbertext{
   bottom: 0%;
 }
@@ -500,19 +504,12 @@ ul {
 	font-size: 1.2em;
 	width: 100%;
 	padding-bottom: 1%;
-	/* transform: translate(-24vw,10vh); */
-	/* z-index: 55 ; */
-  /* -ms-transform: translate(10vw,110px); IE 9 */
-  /* -webkit-transform: translate(10vw,110px); Safari */
 }
 
 #proj1 {
 	background: url('../img/ilift-desktop.png');
   background-size: cover;
 	background-position: center;
-	/* background-repeat: no-repeat; */
-	/* object-fit: cover; */
-	
 }
 
 #proj2 {
