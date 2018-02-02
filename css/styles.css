@@ -433,11 +433,13 @@ ul {
 }
 
 #project-title {
+	/* flex: .5; */
 	/* width: 80%; */
 	/* background-color: yellow; */
 }
 
 #project-wrapper {
+	justify-content: flex-start;
 	/* flex: 5; */
 	/* height: 40vh; */
 	/* display: flex;
@@ -449,11 +451,21 @@ ul {
 
 .individual-project {
 	width: 70vw;
-	height: 70vh;
+	height: 60vh;
 	/* background-color: blue; */
 	display: flex;
 	transition: visibility 0s linear 0.5s,opacity 0.5s linear;
 	flex-direction: column;
+	border: #000 1px solid;
+	background-repeat: no-repeat;
+	opacity: .9;
+	border-radius: 6px;
+	/* box-shadow: inset 0px 40px 50px 5px rgba(2, 5, 8, 0.8); */
+	/* object-fit: contain; */
+	/* background-attachment: fixed;
+  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; */
 	/* overflow-y: scroll; */
 	/* position: relative; */
 }
@@ -494,50 +506,60 @@ ul {
 	opacity: .9;
 	/* /* height: 100%;
 	/* width: 100%; */
-	box-shadow: inset 0px 40px 50px 5px rgba(2, 5, 8, 0.8);
+	/* box-shadow: inset 0px 40px 50px 5px rgba(2, 5, 8, 0.8); */
 }
 
-/* .project-image:after {
-  content: '';
-  position: absolute;
-  width: inherit;
-	height: inherit;
-	border-radius: inherit;
-  top: 0;
-  left: 0;
-  background: rgba(255, 0, 0, 0.5);
-} */
+#proj1 {
+	background: url('../img/ilift-desktop.png');
+  background-size: cover;
+	background-position: center;
+	/* background-repeat: no-repeat; */
+	/* object-fit: cover; */
+}
 
-#proj1 .project-image {
-	background: url('../img/calc1.png');
-	
+#proj2 {
+	background: url('../img/tweeder.png');
+	background-size: cover;
+	background-position: center;
+}
+
+#proj3 {
+	background: url('../img/Bathroom App.png');
+	background-size: cover;
+	background-position: center;
+}
+
+#proj4 {
+	background: url('../img/froger-gif.gif');
+	background-size: cover;
+	background-position: center;
 }
 
 #proj1 .project-title {
-	color: #8bc34a;
+	/* color: #8bc34a; */
 	/* text-shadow: #f3f38b 5px 2px 2px; */
-	font-family: 'matrix';
+	/* font-family: 'matrix'; */
 	/* font-size: 4.5em; */
 }
 
 #proj2 .project-image {
-	background: url('../img/frogger1.png');
+	/* background: url('../img/frogger1.png'); */
 }
 
 #proj2 .project-title {
-	color: #009688;
+	/* color: #009688;
 	text-shadow: yellow 2px 5px;
-	font-family: 'karma suture';
+	font-family: 'karma suture'; */
 }
 
 #proj3 .project-image {
-	background: url('../img/clock1.png');
+	/* background: url('../img/clock1.png'); */
 }
 
 #proj3 .project-title {
 	/* color: #009688;
 	text-shadow: yellow 2px 5px; */
-	font-family: 'digital-7';
+	/* font-family: 'digital-7'; */
 }
 
 .arrows {
