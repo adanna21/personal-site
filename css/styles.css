@@ -467,46 +467,43 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat; */
 	/* overflow-y: scroll; */
-	/* position: relative; */
+	position: relative;
+	overflow: hidden;
 }
 
 .numbertext {
 	text-align: left;
-	width: 75%;
-	/* padding: 25px 0 0 15px; */
-	padding-top: 2vh;
+	width: 100%;
+	height: 60%;
 	font-size: 1.5em;
-	/* background-color: red; */
+	background: rgba(3, 8, 12, 1);
+	position: absolute;
+	transition: bottom 0.6s ease;
+	bottom: -100%;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
 }
+
+.numbertext a {
+	color: #bbb;
+}
+
+.individual-project:hover .numbertext{
+  bottom: 0%;
+}
+
 .project-title {
 	text-align: center;
 	/* background-color: green; */
 	/* flex: 1; */
-	font-size: 3em;
+	font-size: 1.2em;
 	width: 100%;
-	padding-bottom: 2%;
+	padding-bottom: 1%;
 	/* transform: translate(-24vw,10vh); */
 	/* z-index: 55 ; */
   /* -ms-transform: translate(10vw,110px); IE 9 */
   /* -webkit-transform: translate(10vw,110px); Safari */
-}
-
-.project-image {
-	/* background-color: azure; */
-	width: 80%;
-	height: 70%;
-	border-radius: 6px;
-  /* flex: 4; */
-	/* flex-basis: 900px; */
-	display: flex;
-  background-size: contain;
-  background-position: center;
-  /* background-repeat: no-repeat; */
-	/* background-attachment: fixed; */
-	opacity: .9;
-	/* /* height: 100%;
-	/* width: 100%; */
-	/* box-shadow: inset 0px 40px 50px 5px rgba(2, 5, 8, 0.8); */
 }
 
 #proj1 {
@@ -515,6 +512,7 @@ ul {
 	background-position: center;
 	/* background-repeat: no-repeat; */
 	/* object-fit: cover; */
+	
 }
 
 #proj2 {
@@ -535,31 +533,11 @@ ul {
 	background-position: center;
 }
 
-#proj1 .project-title {
-	/* color: #8bc34a; */
-	/* text-shadow: #f3f38b 5px 2px 2px; */
-	/* font-family: 'matrix'; */
-	/* font-size: 4.5em; */
-}
-
-#proj2 .project-image {
-	/* background: url('../img/frogger1.png'); */
-}
-
-#proj2 .project-title {
-	/* color: #009688;
-	text-shadow: yellow 2px 5px;
-	font-family: 'karma suture'; */
-}
-
-#proj3 .project-image {
-	/* background: url('../img/clock1.png'); */
-}
-
-#proj3 .project-title {
-	/* color: #009688;
-	text-shadow: yellow 2px 5px; */
-	/* font-family: 'digital-7'; */
+#proj5 {
+	background: url('../img/Search.gif');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .arrows {
@@ -571,31 +549,28 @@ ul {
 	cursor: pointer;
 	position: relative;
 	/* z-index: 55; */
-	font-size: 2.5em;
+	font-size: 3em;
 	text-shadow: #000 0px 2px;
 	/* display: none; */
 	opacity: 0;
 	transition: opacity 0.5s linear;
 	/* top: 45%; */
 }
-/* .arrows .active {
-	display: block;
-	opacity: .7;
-} */
+
 #prev {
-	left: -25vw;
-	top: 27vh;
+	left: -30vw;
+	top: 32vh;
 	z-index: 55;
 }
 
 #next {
-	left: 25vw;
-	bottom: 48vh;
+	left: 30vw;
+	bottom: 35vh;
 }
 
 #projects:hover .arrows{
 	/* display: block; */
-	opacity: .7;
+	opacity: .8;
 }
 /*........................................................CONTACT......................................................*/
 #contact-wrapper {
