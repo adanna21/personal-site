@@ -141,14 +141,6 @@ ul {
   left: 0;
   z-index: 999;
   overflow: hidden;
-  /* margin-left: -10px;
-	transform:skew(5deg); */
-  /* transition: .5s ease; */
-  /* margin-left: -60px;
-	-webkit-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
-	-moz-transform: translate3d(0, 0, 0) skew(-20deg, 0deg);
-  -ms-transform: translate3d(0, 0, 0) skew(-20deg, 0deg)
-  transform: translate3d(0, 0, 0) skew(-20deg, 0deg) */
   -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 87%, 0 100%);
   /* top:-5%; */
@@ -553,7 +545,7 @@ ul {
 	text-align: center;
 	border-radius: 60px;
 	width: 5%;
-	color: #142e4b;
+	color: rgb(235, 232, 232);
 	cursor: pointer;
 	position: relative;
 	/* z-index: 55; */
