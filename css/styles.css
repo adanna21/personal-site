@@ -784,18 +784,18 @@ a:hover, .project-image:hover, i:hover  {
 	.project-container {
 		flex: 8;
 		width: 105%;
-		height: 110vh;
-		display: flex;
-		flex-direction: column;
+		/* height: 1500px; */
+		/* display: flex; */
+		/* flex-direction: column; */
 		overflow-y: scroll;
 
 	}
 	#project-wrapper {
 		position: none;
-		min-width: 300px;
-		max-width: 700px;
-		height: 150vh;
-		display: flex;
+		/* min-width: 300px;
+		max-width: 700px; */
+		/* height: 1500px; */
+		display: block;
 		flex-direction: column;
 		/* align-items: center; */
 		justify-content: space-between;
@@ -807,21 +807,18 @@ a:hover, .project-image:hover, i:hover  {
 		/* background-color: blue; */
 		display: flex;
 		transition: visibility 0s linear 0.5s,opacity 0.5s linear;
-		flex-direction: column;
-		overflow-y: scroll;
-
-		/* position: relative; */
 	}
-
+	.numbertext {
+		height: 15%;
+		font-size: 1.2em;
+		bottom: 0%;
+	}
+	.numbertext p {
+		display: none;
+	}
 	#proj1, #proj2, #proj3 {
-		flex-basis: 100%;
-		height: 100%;
-	}
-	.project-image {
-		/* background-color: azure; */
-		width: 100%;
-		height: 100%;
-		flex-basis: 100vh;
+		/* flex-basis: 100%;
+		height: 100%; */
 	}
 
 	#projects:hover .arrows{
