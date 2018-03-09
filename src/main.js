@@ -709,3 +709,30 @@ $('.dot').click(function(e) {
       window.location.hash = `${id}`;
   })
 })
+
+
+var ary = [0,1,2]
+ary[10] = 10
+ary.filter(function(x) { return x % 2 === 0})
+
+var ary = [ '55', 1 , '3' ]
+ary[0]=2
+ary.map(function(elem) { return elem + '1' })
+
+
+var wdiInstructors = [
+  {
+    name: {
+      first: 'Andrew',
+      last: 'Whitley'
+    },
+    cohort: 19
+  },
+  {
+    name: {
+      first: 'Perry',
+      last: 'Fustero'
+    },
+    cohort: 1
+  }
+]

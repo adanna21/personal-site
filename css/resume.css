@@ -85,7 +85,7 @@ p {
   transition: all .3s ease-in;
 }
 
-#contactDetails ul li a:hover {
+#contactDetails ul li a:hover{
   color: #4B88A2;
 }
 
@@ -140,6 +140,14 @@ article {
   font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: -2px;
+}
+.sectionContent a {
+  text-decoration: none;
+  color: #4B88A2;
+}
+
+.sectionContent a:hover {
+  text-decoration: underline;
 }
 
 .subDetails {
